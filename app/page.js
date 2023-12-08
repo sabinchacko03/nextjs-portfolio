@@ -3,7 +3,6 @@ import 'devicon';
 import { skills } from './skills';
 
 export default function Home() {
-  console.log(skills);
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -26,7 +25,7 @@ export default function Home() {
           Sabin Chacko
         </h1>
         <p className={`m-0 md:mt-5 max-w-[95ch] text-sm opacity-50`}>
-          👋 I'm Sabin Chacko. A Web Developer, ever since I started working with PHP Codeigniter in 2013. Later started using Laravel and worked on some major projects written in Laravel. Mostly worked as a Backend Developer handling REST and SOAP APIs, most of the times, with MySQL and MS SQL SERVER Databases. Knows ReactJS and Python. Thank you 💜
+          {"👋 I'm Sabin Chacko. A Web Developer, ever since I started working with PHP Codeigniter in 2013. Later started using Laravel and worked on some major projects written in Laravel. Mostly worked as a Backend Developer handling REST and SOAP APIs, most of the times, with MySQL and MS SQL SERVER Databases. Knows ReactJS and Python. Thank you 💜"}
         </p>
       </div>
 
@@ -40,10 +39,10 @@ export default function Home() {
 
           <ul className='flex gap-2'>
 
-            {skills.map((skill) => {
+            {skills.map((skill, i) => {
 
               return (
-                <li className="list-inline-item mx-3">
+                <li className="list-inline-item mx-3" key={i}>
                   <i className={skill.icon + ' colored'} style={{ fontSize: "220%" }}>
                     <p
                       className="text-center"
