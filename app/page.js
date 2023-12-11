@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import 'devicon';
-import { skills } from './skills';
+import { skills } from './config';
 
 export default function Home() {
   return (
