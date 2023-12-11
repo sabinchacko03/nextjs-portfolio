@@ -1,6 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-This is a portfolio app created from basic NextJs template.
+This is a portfolio website created from basic NextJs template.
 
 [Demo](https://sabinchacko03.github.io)
 
